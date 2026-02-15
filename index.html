@@ -434,9 +434,115 @@
                 </li>
              </ul>
              </div>
+
+             <div class="footer-subscribe">
+                <p class="footer-subscribe-title">Subscribe</p>
+                
+                <form class="subscribe-form">
+                    <label class="subscribe-label">
+                        <input type="email" name="email" class="subscribe-input" placeholder="E-mail" required/>
+                    </label>
+                    
+                    <button type="submit" class="subscribe-btn">Subscribe
+                        <svg class="subscribe-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+             </div>
+            </div>
+
+        </div>
+     </footer>
+
+    <div class="modal-overlay" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="icon-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+
+            <form class="modal-form">
+                <label class="modal-label">Name
+                    <span class="modal-input-wrap">
+                        <input type="text" name="user-name" class="modal-input" required />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Phone
+                    <span class="modal-input-wrap">
+                        <input type="tel" name="user-tel" class="modal-input" required />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Email
+                    <span class="modal-input-wrap">
+                        <input type="email" name="user-email" class="modal-input" required />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Comment
+                    <textarea class="modal-textarea" placeholder="Text input"></textarea>
+                </label>
+
+                <label class="modal-checkbox">
+                    <input type="checkbox" class="checkbox-input" required />
+                    <span class="checkbox-custom">
+                        <svg width="10" height="8" class="checkbox-check">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    <p class="policy">I accept the terms and conditions of the</p>
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                </label>
+
+                <button type="submit" class="modal-submit-btn">Send</button>
+
+            </form>
+
         </div>
 
-    </footer>
+    </div>
    
+    <script>
+
+        const modal = document.querySelector('[data-modal]');
+        const openBtn = document.querySelector('.button-order');
+        const closeBtn = document.querySelector('[data-modal-close]');
+
+       
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('is-open');
+        });
+
+        
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('is-open');
+        });
+
+        
+        modal.addEventListener('click', e => {
+            if (e.target === modal) {
+            modal.classList.remove('is-open');
+            }
+        });
+
+    </script>
+
+
   </body>
+  
 </html>
