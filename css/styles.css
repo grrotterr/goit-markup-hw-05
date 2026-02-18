@@ -923,7 +923,7 @@ main h2 {
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.02em;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     margin-bottom: 16px;
 }
 
