@@ -934,7 +934,7 @@ main h2 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    border: rgba(0, 0, 0, 0.1);
     background-color: rgba(231, 233, 252, 1);
     display: flex;
     align-items: center;
@@ -942,7 +942,7 @@ main h2 {
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid black;
+    
 }
 
 .modal-close-btn:focus,
@@ -956,9 +956,9 @@ main h2 {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:focus,
-.icon-close:hover{
-    fill: rgba(255, 255, 255, 1);
+.modal-close-btn:hover .icon-close,
+.modal-close-btn:focus .icon-close {
+    fill: #ffffff;
 }
 
 .modal-label {
@@ -1026,7 +1026,7 @@ main h2 {
     line-height: 1.16;
     font-weight: 400;
     letter-spacing: 0.04em;
-    padding: 8px 16px;
+    padding: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
