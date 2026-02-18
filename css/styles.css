@@ -934,7 +934,7 @@ main h2 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(231, 233, 252, 1);
     display: flex;
     align-items: center;
@@ -1074,8 +1074,8 @@ main h2 {
 }
 
 .checkbox-input:checked + .checkbox-custom {
-    background-color: #4d5ae5;
-    border-color: #4d5ae5;
+    background-color: #404bbf;
+    border-color: #404bbf;
     
     
 }
