@@ -934,8 +934,8 @@ main h2 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #e7e9fc;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(231, 233, 252, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -948,7 +948,17 @@ main h2 {
 .modal-close-btn:focus,
 .modal-close-btn:hover{
     background-color: #404BBF;
-    fill: #FFFFFF;
+    
+}
+
+.icon-close{
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:focus,
+.icon-close:hover{
+    fill: rgba(255, 255, 255, 1);
 }
 
 .modal-label {
@@ -976,6 +986,8 @@ main h2 {
     padding-left: 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -990,11 +1002,17 @@ main h2 {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .modal-input:focus + .modal-icon {
     fill: #4d5ae5;
+}
+
+.modal-input:focus {
+    border-color: #4d5ae5;
+    outline: none;
 }
 
 .modal-textarea {
@@ -1010,6 +1028,8 @@ main h2 {
     letter-spacing: 0.04em;
     padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder{
@@ -1023,7 +1043,7 @@ main h2 {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: 16px 0;
+    margin: 16px 0 24px;
 }
 
 .checkbox-input .visually-hidden{
@@ -1043,7 +1063,7 @@ main h2 {
     justify-content: center;
     margin-right: 8px;
     vertical-align: middle;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)e, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
