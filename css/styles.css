@@ -977,7 +977,9 @@ main h2 {
 
 
 .modal-input-wrap {
+    display: block;
     position: relative;
+    margin-top: 4px;
 }
 
 .modal-input {
@@ -996,8 +998,6 @@ main h2 {
 
 .modal-icon {
     position: absolute;
-    width: 13px;
-    height: 13px;
     color: #2E2F42;
     left: 16px;
     top: 50%;
@@ -1038,12 +1038,11 @@ main h2 {
 
 .modal-checkbox {
     font-size: 12px;
-   
-    
+    color: #8e8f99;
+    gap: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin: 16px 0 24px;
+    margin-bottom:24px;
 }
 
 .checkbox-input .visually-hidden{
